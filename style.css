@@ -1,0 +1,572 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+/* element selector */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+
+footer {
+    background-color: #001C30;
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+main {
+    overflow: auto;
+    padding: 15px;
+}
+
+/* grouping selctor */
+h2,
+h3 {
+    color: #40c4ff;
+}
+
+/* class selector */
+
+
+.center-text {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.text-bold {
+    font-weight: bold;
+    color: #526D82;
+}
+
+.label {
+    background-color: #40c4ff;
+    color: #526D82;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* LAYER 2 */
+
+
+/* IMAGE HOVER */
+.container {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    margin: auto 0;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+}
+
+.konten {
+    margin: 5px;
+}
+
+.konten img {
+    width: 100%;
+    object-fit: cover;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0007);
+    border-radius: 5%;
+}
+
+.konten img:hover {
+    outline: 10px solid #40c4ff;
+    transition: 1s;
+}
+
+.konten:nth-child(1):hover {
+    flex-basis: 20%;
+    cursor: pointer;
+}
+
+.konten:nth-child(2):hover {
+    flex-basis: 20%;
+    cursor: pointer;
+}
+
+.konten:nth-child(3):hover {
+    flex-basis: 20%;
+    cursor: pointer;
+}
+
+.konten:nth-child(4):hover {
+    flex-basis: 20%;
+    cursor: pointer;
+}
+
+.konten:nth-child(5):hover {
+    flex-basis: 20%;
+    cursor: pointer;
+}
+
+.konten:nth-child(6):hover {
+    flex-basis: 20%;
+    cursor: pointer;
+}
+
+.konten:nth-child(7):hover {
+    flex-basis: 20%;
+    cursor: pointer;
+}
+
+.konten:nth-child(8):hover {
+    flex-basis: 20%;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    .konten:nth-child(1):hover {
+        flex-basis: 100%;
+        cursor: pointer;
+    }
+
+    .konten:nth-child(2):hover {
+        flex-basis: 100%;
+        cursor: pointer;
+    }
+
+    .konten:nth-child(3):hover {
+        flex-basis: 100%;
+        cursor: pointer;
+    }
+
+    .konten:nth-child(4):hover {
+        flex-basis: 100%;
+        cursor: pointer;
+    }
+
+    .konten:nth-child(5):hover {
+        flex-basis: 100%;
+        cursor: pointer;
+    }
+
+    .konten:nth-child(6):hover {
+        flex-basis: 100%;
+        cursor: pointer;
+    }
+
+    .konten:nth-child(7):hover {
+        flex-basis: 100%;
+        cursor: pointer;
+    }
+
+    .konten:nth-child(8):hover {
+        flex-basis: 100%;
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    footer {
+        object-fit: cover;
+
+    }
+}
+
+/* IMAGE HOVER */
+
+
+/* JUMBOTRON */
+.jumbotron {
+    background-color: #001C30;
+    font-size: 20px;
+    padding: 50px;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.h1-jumbotron {
+    letter-spacing: 5px;
+    font-size: 80px;
+    text-align: left;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #40c4ff;
+    margin: 0px;
+    position: relative;
+    cursor: pointer;
+}
+
+.h1-jumbotron::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #40c4ff;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+.h1-jumbotron.clicked::after {
+    width: 100%;
+}
+
+.h2-jumbotron {
+    letter-spacing: 15px;
+    text-align: left;
+    margin-left: 5px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 10px
+}
+
+.h3-jumbotron {
+    text-align: left;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+
+    margin-left: 5px;
+}
+
+@media screen and (max-width:768px) {
+    .h1-jumbotron {
+        font-size: 60px;
+    }
+}
+/* JUMBOTRON */
+
+
+/* ANIMASI TEXT TYPING */
+.div-img {
+    width: 80%;
+}
+
+.h1-typing {
+    font-size: 30px;
+    margin-right: 900px;
+    color: #526D82;
+}
+
+.typing-section {
+    text-align: center;
+    padding: 155px;
+}
+
+.typing-text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    color: #526D82;
+    font-size: 30px;
+}
+
+.typing-text .role {
+    display: inline-block;
+    border-right: .15em solid orange;
+    animation: typing 3s steps(40, end);
+    padding-left: 5px;
+    animation-delay: 3s;
+    color: #40c4ff;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .typing-text {
+        font-size: 50px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .h1-typing {
+        font-size: 20px;
+        margin-right: 550px;
+        color: #526D82;
+    }
+}
+
+/* ANIMASI TEXT TYPING */
+
+
+/* ANIMASI LOGO */
+.text-animasi-logo {
+    text-align: center;
+    font-family: Arial;
+    color: #526D82;
+    font-size: 30px;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.logo-container {
+    margin: 10px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.logo:hover {
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .logo-section {
+        height: 20vh;
+    }
+}
+
+/* ANIMASI LOGO */
+
+
+/* TEXT BLEND DIATAS BACK COLOR */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.image-container img {
+
+    max-width: 900%;
+    max-height: 900%;
+    width: auto;
+    height: auto;
+}
+
+.picture-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a div {
+    transition: font-size 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a div:hover {
+    color: #40c4ff;
+}
+
+.color-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.color {
+    height: 722px;
+    position: relative;
+}
+
+.color1 {
+    background-color: #001C30;
+    width: 60%;
+    margin-bottom: 5px;
+}
+
+.color2 {
+    background-image: url(image/welcome\ \(4\).png);
+    background-size: 300%;
+    object-fit: cover;
+    background-position: center;
+    opacity: 50%;
+    width: 40%;
+    margin-bottom: 5px;
+}
+
+.color3 {
+    background-image: url(image/Photo.JPG);
+    background-size: 300%;
+    background-position: left;
+    object-fit: cover;
+    background-position: center;
+    opacity: 50%;
+    width: 40%;
+}
+
+.color4 {
+    background-color: #001C30;
+    width: 60%;
+}
+
+.picture-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    font-size: 100px;
+    font-weight: bold;
+    z-index: 1;
+    letter-spacing: 20px;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.picture-text:hover {
+    font-weight: bold;
+    color: #40c4ff;
+    transition: all .5s ease-in-out;
+}
+
+@media screen and (max-width:768px) {
+    .color3 {
+        background-size: 330%;
+    }
+
+    .color2 {
+        background-size: 385%;
+    }
+}
+
+/* TEXT BLEND DIATAS BACK COLOR */
+
+
+/* BOX KONTAK */
+.text-media {
+    margin-left: 140px;
+    margin-top: 50px;
+}
+
+.text-media-sosial {
+    color: #526D82;
+}
+
+.kontak {
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.sosial-media {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.sosial-media a {
+    margin-right: 10px;
+}
+
+.kontak {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 700px;
+    float: right;
+    margin-right: 20px;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    color: #526D82;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #40c4ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #40c4ff;
+}
+
+.sosial-media {
+    display: flex;
+    align-items: center;
+    margin-top: 125px;
+    margin-left: 150px;
+    margin-bottom: 100px;
+}
+
+.sosial-media a {
+    margin-right: 10px;
+}
+
+.sosial-media img {
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    float: center;
+}
+
+.logo-media-sosial {
+    padding: 10px;
+    margin-bottom: 150px;
+}
+
+@media screen and (max-width:768px) {
+    img {
+        margin-bottom: 0px;
+    }
+
+    .sosial-media {
+        display: flex;
+        align-items: center;
+        margin-top: 100px;
+        margin-left: 250px;
+    }
+
+    .kontak {
+        margin-right: -3px;
+    }
+
+    .text-media-sosial {
+        margin-left: 98px;
+    }
+}
+/* BOX KONTAK */
